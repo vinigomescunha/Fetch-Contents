@@ -1,0 +1,16 @@
+{
+    "source": {
+        "type": "local",
+        "href": "../examples/data/data1.json"
+    },
+    "transform": [
+        {
+            "fieldName": "username",
+            "fn": "resource => resource.user.name + ' ' + resource.user.last"
+        },
+        {
+            "fieldName": "sum",
+            "fn": "resource => resource.firstNumber + resource.lastNumber"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "users": [
+      {
+        "id": 0,
+        "name": "Lorem Ipsun",
+        "email": "lorem.ipsum@dolor.sit",
+        "year": "1950",
+        "address": "00 my Street",
+        "city": "City 2",
+        "active": true
+      },
+      {
+        "id": 1,
+        "name": "Dolor Sit",
+        "email": "dolor@sit.amet",
+        "year": "1990",
+        "address": "Avenue Lorem Ipsum",
+        "city": "City 2",
+        "active": false
+      }
+    ],
+    "pictures": [
+      "banner0.png",
+      "banner1.png",
+      "banner2.png"
+    ],
+    "coordinates": {
+        "lat": 79.21,
+        "lon": -12.45
+    }
+  }

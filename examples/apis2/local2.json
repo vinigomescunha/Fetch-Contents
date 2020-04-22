@@ -1,0 +1,20 @@
+{
+    "source": {
+        "type": "local",
+        "href": "../examples/data/data2.json"
+    },
+    "transform": [
+        {
+            "fieldName": "active_users",
+            "fn": "resource => resource.users.filter(u => u.active)"
+        },
+        {
+            "fieldName": "latitude",
+            "fn": "resource => resource.coordinates.lat"
+        },
+        {
+            "fieldName": "longitude",
+            "fn": "resource => resource.coordinates.lon"
+        }
+    ]
+}

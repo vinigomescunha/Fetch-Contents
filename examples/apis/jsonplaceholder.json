@@ -1,0 +1,16 @@
+{
+    "source": {
+        "type": "remote",
+        "href": "https://jsonplaceholder.typicode.com/todos/1"
+    },
+    "transform": [
+        {
+            "fieldName": "userTodo",
+            "fn": "resource => 'Id -> ' + resource.userId + ', Title -> ' + resource.title"
+        },
+        {
+            "fieldName": "isCompleted",
+            "fn": "resource => resource.completed"
+        }
+    ]
+}

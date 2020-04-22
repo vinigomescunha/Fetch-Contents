@@ -1,0 +1,16 @@
+{
+    "source": {
+        "type": "remote",
+        "href": "http://dummy.restapiexample.com/api/v1/employees"
+    },
+    "transform": [
+        {
+            "fieldName": "10percent",
+            "fn": "resource => resource.data.map((d, i) => ({ name : ( i + 1 ) + ' - ' + d.employee_name.split(' ')[0], value: (parseInt(d.employee_salary)* 0.1) }))"
+        },
+        {
+            "fieldName": "total",
+            "fn": "resource => resource.data.reduce((p, c)=> p + parseInt(c.employee_salary), 0)"
+        }
+    ]
+}

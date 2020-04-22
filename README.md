@@ -1,6 +1,6 @@
 # Fetch Bundle
 
-## typescrpit & nodejs
+## typescript & nodejs
 
 npm i
 
